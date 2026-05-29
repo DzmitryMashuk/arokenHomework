@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework4</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form class="form">
+      <h1>Ваши личные данные</h1>
+      <fieldset class="form-group">
+        <label class="field">
+          Ваше имя
+          <input type="text" required name="name" placeholder="Имя" />
+        </label>
+        <label class="field">
+          Ваш возвраст
+          <input
+            type="number"
+            required
+            inputmode="numeric"
+            name="age"
+            placeholder="Возвраст"
+          />
+        </label>
+        <label class="field">
+          Ваш номер телефона
+          <input
+            type="tel"
+            required
+            inputmode="tel"
+            name="phone_number"
+            placeholder="Номер телефона"
+          />
+        </label>
+        <label class="field">
+          Ваша почта
+          <input
+            type="email"
+            required
+            inputmode="email"
+            name="email"
+            placeholder="Почта"
+          />
+        </label>
+      </fieldset>
+      <fieldset class="form-group">
+        <label class="field">
+          Сообщение
+          <textarea
+            name="message"
+            placeholder="Ваше сообщение"
+            rows="10"
+            required
+          ></textarea>
+        </label>
+
+        <label class="checkbox-wrap">
+          <input type="checkbox" required name="privacy_policy" />
+          Я принимаю правила
+        </label>
+      </fieldset>
+      <button type="submit" class="button">Отправить</button>
+    </form>
+  </body>
+</html>
